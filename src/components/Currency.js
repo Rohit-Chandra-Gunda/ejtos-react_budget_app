@@ -36,7 +36,7 @@ const Currency = () => {
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{ backgroundColor: '#93e399', color: '#fff' }}
+            style={{backgroundColor: '#93E399', color: '#FFFFFF'}}
             onClick={() => setIsOpen(!isOpen)}
         >
             Currency {'('}{currencyLabel()}{')'}
@@ -50,36 +50,36 @@ const Currency = () => {
                     onClick={() => setCurrencyHandler('$')}
                 >
                     $ Dollar
-            </button>
-        </li>
-        <li>
-            <button
-                className="dropdown-item"
-                type="button"
-                onClick={() => setCurrencyHandler('£')}
-            >
-                £ Pound
-            </button>
-        </li>
-        <li>
-            <button
-                className="dropdown-item"
-                type="button"
-                onClick={() => setCurrencyHandler('€')}
-            >
-                € Euro
-            </button>
-        </li>
-        <li>
-            <button
-                className="dropdown-item"
-                type="button"
-                onClick={() => setCurrencyHandler('₹')}
-            >
-                ₹ Rupee
-            </button>
-        </li>
-      </ul>
+                </button>
+            </li>
+            <li>
+                <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => setCurrencyHandler('£')}
+                >
+                    £ Pound
+                </button>
+            </li>
+            <li>
+                <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => setCurrencyHandler('€')}
+                >
+                    € Euro
+                </button>
+            </li>
+            <li>
+                <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => setCurrencyHandler('₹')}
+                >
+                    ₹ Rupee
+                </button>
+            </li>
+        </ul>
     </div>
   );
 };
