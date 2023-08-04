@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext';
 const BUDGET_MAX_VALUE = 20000;
 
 const Budget = () => {
-    const {budget, expenses, dispatch} = useContext(AppContext);
+    const {budget, currency, expenses, dispatch} = useContext(AppContext);
 
     const totalExpenses = expenses.reduce((total, expense) => {
         return (total = total + expense.cost)
@@ -32,7 +32,7 @@ const Budget = () => {
             </div>
 
             <div style={{display:'flex', alignItems:'center'}}>
-                <span>£</span>
+                <span>{currency}</span>
                 <input
                     required='required'
                     type='number'
